@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'pixel';
+    src: url("../fonts/Pixel-Miners.otf") format("opentype");
+}
+
+html, body {
+    background-color: #00007F;
+    color: #FFFF55;
+    font-family: 'pixel', sans-serif !important;
+    font-size: 11pt;
+    height: 100vh;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+a {
+    color: #616161;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 20px;
+    padding: 5px 7px;
+    width: 120px;
+    text-align: left;
+    cursor: pointer;
+    -webkit-box-shadow: 11px 7px 0px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 7px 0px 3px rgba(0,0,0,1);
+    box-shadow: 11px 7px 0px 3px rgba(0,0,0,1);
+    color: #fff;
+}
+
+.btn::first-letter {
+    color: #FFFF55;
+}
+
+.btn-default {
+    background-color: #00A800;
+}
+
+.code-tab {
+    padding: 0;
+    margin: 0 0 0 15px;
+}
+
+.container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.cursor {
+    background-color: #B05000;
+}
+
+.dropdown-menu {
+    background-color: #C0C0C0;
+    border-radius: 0;
+    border: 0;
+    min-width: 220px;
+}
+
+.dropdown-content {
+    padding: 5px;
+    margin-left: 10px;
+    border: 2px solid #2D2D2D;
+    display: block;
+    width: calc(100% - 20px);
+    height: calc(100% - 4px);
+    color: #2D2D2D;
+}
+
+.dropdown-toggle::after {
+    border: 0 !important;
+}
+
+.file-box, .form-control {
+    background-color: #02A9A8 !important;
+    color: #000;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+footer .highlight {
+    background-color: #00AA00;
+    color: #55FFFF;
+}
+
+#footer-content {
+    margin-top: 15px;
+    padding: 15px 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #00AAAA;
+    color: #00007F;
+    display: block;
+}
+
+#footer-content div {
+    border: 2px solid #00007F;
+    display: block;
+    margin: 0 2px 0 2px;
+    padding-top: 10px;
+    height: calc(100% - 57px);
+    width: calc(100% - 4px);
+}
+
+#footer-content div p {
+    width: 100%;
+    padding: 2px 10px;
+    margin: 0;
+}
+
+#footer-title {
+    position: absolute;
+    left: calc(50% - 200px);
+    margin-top: -10px;
+    background-color: #00AAAA;
+    padding: 0 10px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin: 0;
+}
+
+#line-count {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 30px;
+    display: block;
+    color: #fff;
+}
+
+#line-count span {
+    position: absolute;
+    padding: 0 10px;
+    margin-left: 30px;
+    top: -10px;
+    background-color: #00007F;
+}
+
+main {
+    margin: 10px 2px 0px 2px;
+    width: calc(100% - 4px);
+    display: block;
+    padding: 1px;
+    border: 2px solid #fff;
+    float: left;
+}
+
+#main-content {
+    padding: 5px;
+    border: 2px solid #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#main-title {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#main-title span {
+    padding: 5px 10px;
+    background-color: #00007F;
+}
+
+#menu {
+    float: left;
+    padding: 5px 10px;
+    width: 100%;
+    color: #000000;
+    background-color: #C0C0C0;
+}
+
+nav a {
+    color: #000000 !important;
+}
+
+nav a:hover, .dropdown-content span:hover {
+    color: #000000 !important;
+    background-color: #00A800 !important;
+    cursor: pointer;
+}
+
+nav .popup {
+    z-index: 1001;
+}
+
+.nav-link {
+    float: left;
+    padding: 3px 10px;
+    margin-right: 20px;
+}
+
+.nav-link::first-letter, .dropdown-content a::first-letter, .dropdown-content span::first-letter {
+    color: #AA0000 !important;
+}
+
+.page-content {
+    color: #ddd;
+}
+
+.page-content span {
+    color: #55FFFF;
+}
+
+.page-title {
+    font-size: 10pt;
+    color: #55FF55;
+}
+
+.page-title span, .text-green {
+    color: #14aa14 !important;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: calc(50% - 230px);
+    left: calc(50% - 270px);
+    width: 540px;
+    padding-bottom: 20px;
+    background-color: #C0C0C0;
+    -webkit-box-shadow: 30px 30px 0px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 30px 30px 0px 5px rgba(0,0,0,1);
+    box-shadow: 30px 30px 0px 5px rgba(0,0,0,1);
+    z-index: 1000;
+}
+
+.popup-border {
+    margin: 20px 0 0 4px;
+    border: 2px solid #fff;
+    display: block;
+    width: calc(100% - 8px);
+    height: calc(100% - 40px);
+}
+
+.popup-close {
+    position: relative;
+    text-align: center;
+    width: 20px;
+    height: 18px;
+    margin-top: -16px;
+    margin-left: 10px;
+    border: 2px solid #fff;
+    background-color: #C0C0C0;
+    cursor: pointer;
+}
+
+.popup-close > span {
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 22px;
+    background-color: #C0C0C0;
+    margin: -4px 2px 3px 2px;
+    padding-left: 3px;
+    padding-top: 8px;
+}
+
+.popup-close span > span {
+    display: block;
+    background-color: #00AA00;
+    width: 7px;
+    line-height: 7px;
+}
+
+.popup-content {
+    padding: 5px;
+    margin-top: -11px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    border: 2px solid #fff;
+    display: block;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    color: #2D2D2D;
+}
+
+.popup-content ul {
+    list-style: none;
+    padding: 20px;
+    float: left;
+    display: block;
+}
+
+.popup-content ul li {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.popup-content ul li a:hover {
+    color: #FFFF55 !important;
+    background: none;
+}
+
+.popup-title {
+    position: relative;
+    color: #fff !important;
+    text-align: center;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.popup-title span {
+    padding: 5px 15px;
+    background-color: #C0C0C0;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.table, .table td {
+    border: 0 !important;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.text-light-blue {
+    color: #55FFFF !important;
+}
+
+.text-error {
+    background-color: #8F0908 !important;
+    color: #FFFF55 !important;
+}
+
+.text-grey {
+    color: #AFA8AF !important;
+}
+
+.text-yellow {
+    color: #FFFF55 !important;
+}

@@ -114,6 +114,7 @@ footer .highlight {
     display: block;
     margin: 0 2px 0 2px;
     padding-top: 10px;
+    padding-left: 10px;
     height: calc(100% - 57px);
     width: calc(100% - 4px);
 }
@@ -122,6 +123,16 @@ footer .highlight {
     width: 100%;
     padding: 2px 10px;
     margin: 0;
+}
+
+#footer-content div table th {
+    font-weight: normal;
+}
+
+#footer-content div table td, #footer-content div table th {
+    padding: 2px 10px !important;
+    margin: 0;
+    text-align: left;
 }
 
 #footer-title {

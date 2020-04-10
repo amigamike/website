@@ -1,3 +1,24 @@
+<?php
+
+/**
+ * Menu widget.
+ *
+ * @author      Mike Welsh (mike@amigamike.com)
+ * @copyright   2020 Mike Welsh
+ * @link        https://amigamike.com
+ */
+
+use JAMbi\FlashyFlash\Models\Page;
+
+$model = new Page();
+$pages = $model->where(
+    [
+        $model->getTable() . '.site_id' => $this->data['page']->site_id
+    ]
+)
+->get();
+
+?>
 <ul class="nav">
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">File</a>
@@ -30,11 +51,12 @@
                                 <label><span class="text-yellow">F</span>iles</label>
                                 <ul class="file-box w-100 h-100">
                                     <?php
-                                    if($page->menu) {
-                                        foreach ($page->menu as $menu) {
-                                    ?>
-                                    <li><a href="{{ $menu->path }}">{{ $menu->label }}</a></li>
-                                    <?php
+                                    
+                                    if ($pages) {
+                                        foreach ($pages as $page) {
+                                            ?>
+                                            <li><a href="<?= $page->path; ?>"><?= strtoupper($page->name); ?>.C</a></li>
+                                            <?php
                                         }
                                     }
                                     ?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * About template.
+ * Contact template.
  */
 
 $this->include('common/header');

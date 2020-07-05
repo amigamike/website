@@ -109,6 +109,14 @@ footer .highlight {
     display: block;
 }
 
+#footer-content a {
+    color: #00007F;
+}
+
+#footer-content a:hover {
+    color: #55FFFF;
+}
+
 #footer-content div {
     border: 2px solid #00007F;
     display: block;
@@ -343,6 +351,42 @@ nav .popup {
     margin-top: -10px;
 }
 
+.popup-title .btn-close {
+    border:2px solid #fff !important;
+    background-color: #C0C0C0;
+    cursor: pointer;
+    height: 20px;
+    width: 25px;
+    float: left;
+    margin-left: 15px;
+    padding-left: 4px;
+    position: relative;
+    display: block;
+}
+.popup-title .btn-close div {
+    position: relative;
+    background-color: #C0C0C0;
+    display: block;
+    margin-top: -2px;
+    padding-left: 2px;
+    overflow: hidden;
+    width: 14px;
+    height: 20px;
+}
+
+.popup-title .btn-close span {
+    padding:0 !important;
+    margin-top: 4px;
+    width: 10px;
+    height: 12px;
+    background-color: #55FF55;
+    display: block;
+}
+
+.popup-title .with-close {
+    margin-left: -15px;
+}
+
 .popup-title span {
     padding: 5px 15px;
     background-color: #C0C0C0;
@@ -355,6 +399,11 @@ nav .popup {
 .table, .table td {
     border: 0 !important;
     padding: 0;
+}
+
+.table .highlight {
+    color: #277EB8 !important;
+    background-color: #0200A9;
 }
 
 textarea {

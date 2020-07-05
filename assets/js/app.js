@@ -6,4 +6,6 @@ $(function(){
     $('.popup-close, .btn-close').bind('click', function() {
         $('#' + $(this).data('popup')).hide();
     });
+
+    $('#popup-compiling').show();
 });

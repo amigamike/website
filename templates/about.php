@@ -25,6 +25,9 @@ $this->data['page']->column_number = strlen($this->data['page']->content) + strl
             <p class="code-tab">return <span class="text-grey">0</span>;</p>
         <span class="text-yellow">}</span>
     </div>
+    <?php
+        $this->include('common/compile');
+    ?>
 </div>
 <?php
 

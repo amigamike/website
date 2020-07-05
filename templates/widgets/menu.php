@@ -8,7 +8,7 @@
  * @link        https://amigamike.com
  */
 
-use JAMbi\FlashyFlash\Models\Page;
+use Kytschi\FlashyFlash\Models\Page;
 
 $model = new Page();
 $pages = $model->where(
@@ -19,7 +19,7 @@ $pages = $model->where(
 ->get();
 
 ?>
-<ul class="nav">
+<ul class="nav w-100">
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">File</a>
         <div class="dropdown-menu">
@@ -27,6 +27,9 @@ $pages = $model->where(
                 <span class="dropdown-item" data-popup="file-box">Open</span>
             </div>
         </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://github.com/amigamike" target="_blank">GitHub</a>
     </li>
     <li class="nav-item">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Help</a>
